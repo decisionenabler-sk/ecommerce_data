@@ -18,5 +18,5 @@ def top_purchases(ecommerce_data):
     highest_purchase_customers = [key for key,value in customer_total_amount.items() if value == max(customer_total_amount.values())]
     return top_products, highest_purchase_customers
 
-print("The products that were sold most are:",top_purchases(ecommerce_data)[0])
-print("The customers who made the highest purchase are:", top_purchases(ecommerce_data)[1])
+print("The product(s) that were sold most are:",top_purchases(ecommerce_data)[0])
+print("The customer(s) who made the highest purchase are:", top_purchases(ecommerce_data)[1])
