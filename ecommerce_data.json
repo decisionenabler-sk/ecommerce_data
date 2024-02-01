@@ -74,6 +74,29 @@
         {"day": "2024-01-17T00:00:00", "hours": 6},
         {"day": "2024-01-18T00:00:00", "hours": 7}
       ]
+    },
+    {
+      "employee_id": 203,
+      "name": "Joe Diaz",
+      "role": "delivery_person",
+      "working_hours": [
+        {"day": "2024-01-15T00:00:00", "hours": 8},
+        {"day": "2024-01-18T00:00:00", "hours": 4},
+        {"day": "2024-01-19T00:00:00", "hours": 8},
+        {"day": "2024-01-21T00:00:00", "hours": 2}
+      ]
+    },
+    {
+      "employee_id": 204,
+      "name": "Susan Li",
+      "role": "delivery_person",
+      "working_hours": [
+        {"day": "2024-01-14T00:00:00", "hours": 4},
+        {"day": "2024-01-17T00:00:00", "hours": 6},
+        {"day": "2024-01-1800:00:00", "hours": 8},
+        {"day": "2024-01-1900:00:00", "hours": 8}
+      ]
     }
+
   ]
 }
