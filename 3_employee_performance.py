@@ -15,13 +15,15 @@ def calculate_avg_wh_employee(data):
 #2. we will calculate average working hours for each day (across all employees)
 def calculate_avg_wh_day(data):
     total_wh = defaultdict(int)
-    avg_wh = defaultdict(float)
+    count_employees_per_day = defaultdict(set)
     for employee in data["employees"]:
         for wh in employee["working_hours"]:
             day = wh["day"]
             total_wh[day] += wh["hours"]
-    return dict(total_wh)
-# TODO: How many employees worked on each day?
+            count_employees_per_day[day].add(employee["name"])
+    print(count_employees_per_day)
+    avg_wh = {day: total_hours / len(employees) for day, (total_hours, employees) in total_wh.items()}
+    return avg_wh
 
 # 3. We will find the employee and day with highest average working hours
     
